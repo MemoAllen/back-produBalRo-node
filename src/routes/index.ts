@@ -13,12 +13,15 @@ import {
   verifyToken,
   resetPassword,
   forgotPassword,
+  confirmSign,
 } from "../controllers/photo.controller";
 
 
 router.route("/forgot").post(forgotPassword);
 
 router.route("/reset").post(resetPassword);
+
+router.route("/confirm").post(confirmSign);
 
 // routes
 // middleware
